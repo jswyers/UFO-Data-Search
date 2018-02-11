@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" />
+  
+  <link href="bootstrap.min.css" rel="stylesheet">
+  <style>
+      #jumbo {
+        background-image: url(GSFC_20171208_Archive_e001792_medium.jpg);
+        background-position: 0% 25%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        color:white;
+      }
+      #search {
+        color: white;
+        background-color:  rgb(32, 73, 107);  
+      }
+      input[type="button"] {
+        transition: all .3s;
+        border: 1px solid #ddd;
+        padding: 8px 16px;
+        text-decoration: none;
+        border-radius: 5px;
+        font-size: 15px;
+        }
+
+        input[type="button"]:not(.active) {
+        background-color:transparent;
+        }
+
+        .active {
+        background-color: #ff4d4d;
+        color :#fff;
+        }
+
+        input[type="button"]:hover:not(.active) {
+        background-color: #ddd;
+        }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="jumbotron text-center"  id = "jumbo" style="margin-top: 20px">
+            
+        <h1>We are not alone!</h1>
+                <p>Ask your neighbors and friends...</p>
+    </div>
+    
+    
+    
+    
+    <div class="row">
+
+
+
+      <form class="form-inline" style = "margin: 18px">
+            <label class="sr-only" for="inlineFormInput">Name</label>
+            <input type="text" class="form-control mb-2 mr-sm-2 mb-sm-0" id="state" placeholder="State">
+
+            <label class="sr-only" for="inlineFormInput">Name</label>
+            <input type="text" class="form-control mb-2 mr-sm-2 mb-sm-0" id="date" placeholder="Date">
+
+            <label class="sr-only" for="inlineFormInput">Name</label>
+            <input type="text" class="form-control mb-2 mr-sm-2 mb-sm-0" id="city" placeholder="City">
+
+            <label class="sr-only" for="inlineFormInput">Name</label>
+            <input type="text" class="form-control mb-2 mr-sm-2 mb-sm-0" id="country" placeholder="Country">
+
+            <label class="sr-only" for="inlineFormInput">Name</label>
+            <input type="text" class="form-control mb-2 mr-sm-2 mb-sm-0" id="shape" placeholder="Shape">
+
+          
+            
+            <a id="search" class="btn btn-default" id = 'search'>Search!</a>
+           
+        </form>
+    </div>
+    <div class="row">
+      <div class="col-md-12" style = "margin-top: 20px">
+        <table class="table table-striped" style = "background-color: rgb(186, 182, 192)" id="myTable"> 
+                <thead>
+                        <tr>
+                          <th>Date</th>
+                          <th>City</th>
+                          <th>State</th>
+                          <th>Country</th>
+                          <th>Shape</th>
+                          <th>Duration</th>
+                          <th>Comments</th>
+                        </tr>
+                      </thead>      
+          <tbody>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+ 
+  </div>
+  <script src="data.js" type="text/javascript"></script>
+  <script src="index.js" type="text/javascript"></script>
+</body>
+
+</html>
